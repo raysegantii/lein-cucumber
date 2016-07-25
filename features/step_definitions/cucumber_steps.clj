@@ -45,10 +45,7 @@
     (project/read "target/test_project/project.clj")))
 
 (defn- writing-to-result [f]
-  (let [out-writer (java.io.StringWriter.)]
-    (with-redefs [*out* out-writer]
-      (f)
-      (reset! result (.toString out-writer)))))
+  (reset! result (with-out-str (f))))
 
 (defn- assert-output-includes [text]
   (assert (.contains @result text)))
