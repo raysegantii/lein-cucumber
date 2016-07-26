@@ -1,11 +1,11 @@
-(defproject org.clojars.punkisdead/lein-cucumber "1.0.6"
+(defproject org.clojars.punkisdead/lein-cucumber "1.0.7"
   :description "Run cucumber-jvm specifications with leiningen"
   :url https://github.com/punkisdead/lein-cucumber
   :dependencies [[info.cukes/cucumber-clojure "1.2.4"]
                  [leiningen-core "2.0.0"]
                  [org.clojure/clojure "1.6.0"]]
   :profiles {:cucumber {:dependencies [[commons-io "2.4"]]
-                        :plugins [[org.clojars.punkisdead/lein-cucumber "1.0.6"]]}}
+                        :plugins [[org.clojars.punkisdead/lein-cucumber "1.0.7"]]}}
   :eval-in :leiningen
   :license {:name "Unlicense"
             :url "http://unlicense.org/"
